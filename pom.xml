@@ -6,6 +6,7 @@
         <module>eureka</module>
         <module>client</module>
         <module>security</module>
+        <module>feign</module>
     </modules>
     <dependencies>
         <dependency>
@@ -88,6 +89,10 @@
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
         </dependency>
     </dependencies>
     <parent>

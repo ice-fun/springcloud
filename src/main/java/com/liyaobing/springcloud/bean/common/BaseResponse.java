@@ -1,9 +1,15 @@
 package com.liyaobing.springcloud.bean.common;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Component
 public class BaseResponse<T> implements Serializable {
     public final static int SUCCESS_CODE = 200;
@@ -16,36 +22,6 @@ public class BaseResponse<T> implements Serializable {
     private int statusCode;
     private String statusMsg;
     private T data;
-
-    public int getStatusCode() {
-        return statusCode;
-    }
-
-    public void setStatusCode(int statusCode) {
-        this.statusCode = statusCode;
-    }
-
-    public String getStatusMsg() {
-        return statusMsg;
-    }
-
-    public void setStatusMsg(String statusMsg) {
-        this.statusMsg = statusMsg;
-    }
-
-    public T getData() {
-        return data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
-    }
-
-    public BaseResponse(int statusCode, String statusMsg, T data) {
-        this.statusCode = statusCode;
-        this.statusMsg = statusMsg;
-        this.data = data;
-    }
 
     public static <T> BaseResponse<T> createResponse(int code, String msg, T data) {
         return new BaseResponse<T>(code, msg, data);

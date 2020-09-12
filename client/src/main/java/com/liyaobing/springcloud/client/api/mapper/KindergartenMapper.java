@@ -1,7 +1,7 @@
 package com.liyaobing.springcloud.client.api.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.liyaobing.springcloud.bean.device.Device;
+import com.liyaobing.springcloud.bean.kindergarten.po.Kindergarten;
 
 /**
  * @author Li Yao Bing
@@ -10,5 +10,5 @@ import com.liyaobing.springcloud.bean.device.Device;
  **/
 
 
-public interface DeviceMapper extends BaseMapper<Device> {
+public interface KindergartenMapper extends BaseMapper<Kindergarten> {
 }

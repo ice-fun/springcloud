@@ -17,13 +17,13 @@ spring:
     name: cloud-client
 
   datasource:
-    url: jdbc:p6spy:mysql://221.5.1.166:3306/neilao_dev?serverTimezone=GMT%2B8
-    username: neilao_dev
-    password: XTRzPr2K4GfF8Dzx
+    url: jdbc:p6spy:mysql://47.107.121.157:3306/aibei2?serverTimezone=GMT%2B8
+    username: aibei2
+    password: aibei2
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
 
 mybatis-plus:
-  type-aliases-package: com.liyaobing.aibeijiayuan.com.liyaobing.springcloud.bean.*
+  type-aliases-package: com.liyaobing.springcloud.bean.*
   global-config:
     db-config:
       id-type: id_worker_str
@@ -31,7 +31,7 @@ mybatis-plus:
       logic-delete-field: isDelete
       logic-delete-value: 1
       logic-not-delete-value: 0
-      table-prefix: stnl_tb_
+      table-prefix: abjy_tb_
       table-underline: true
   configuration:
     map-underscore-to-camel-case: true

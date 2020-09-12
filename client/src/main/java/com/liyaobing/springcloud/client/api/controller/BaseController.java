@@ -1,6 +1,6 @@
 package com.liyaobing.springcloud.client.api.controller;
 
-import com.liyaobing.springcloud.client.api.service.DeviceService;
+import com.liyaobing.springcloud.client.api.service.KindergartenService;
 
 import javax.annotation.Resource;
 
@@ -14,5 +14,5 @@ import javax.annotation.Resource;
 public abstract class BaseController {
 
     @Resource
-    DeviceService deviceService;
+    KindergartenService kindergartenService;
 }
